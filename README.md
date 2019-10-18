@@ -1,2 +1,3 @@
 # Machine-Learning
-Some projects related to machine learning
+Some materials and courses I learned related to machine learning.
+## MIT.6.001_Python
