@@ -19,4 +19,4 @@
    - Can be made up of > 1 column
       - E.g. firstname, lastname
 #### Conceptual SQL Evaluation
-![SQL ORDER] (https://github.com/teenbress/Still_Hungry_Still_Foolish/blob/master/BerkeleyX:%20CS186:%20Database%20Systems/images/SQL%20orders.png)
+![sql order](https://github.com/teenbress/Still_Hungry_Still_Foolish/blob/master/BerkeleyX:%20CS186:%20Database%20Systems/images/SQL%20orders.png)
