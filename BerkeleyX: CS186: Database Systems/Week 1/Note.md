@@ -1,6 +1,6 @@
 ### Strings comparison
-- Old-school SQL
+- Old-school SQL  
        SELECT S.sname FROM Sailors S WHERE S.sname LIKE 'B_%'
-- Standard Regular SQL
+- Standard Regular SQL  
        SELECT S.sname FROM Sailors S WHERE S.sname ~ 'B.*'
        
