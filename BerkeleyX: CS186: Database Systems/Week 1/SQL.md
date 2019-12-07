@@ -23,3 +23,11 @@
 
 #### Aliases and Self-Joins
 
+#### Set Semantics
+- Set: a collection of distinct elements
+- Standard ways of manipulating/combining sets
+   - Union
+   - Intersect
+   - Except
+- Treat tuples within a relation as elements of a set
+
