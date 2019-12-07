@@ -26,3 +26,5 @@ You can now start your container whenever you want by running:
 ```
 docker start -ai cs186
 ```
+
+Other instructions about Docker could also search in : https://yeasy.gitbooks.io/docker_practice/container/run.html
