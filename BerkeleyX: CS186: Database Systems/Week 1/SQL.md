@@ -12,3 +12,10 @@
 - **Attribute**(Column, Field)
 - **Tuple** (Record, Row)
 
+#### The SQL DDL: Primary Keys
+- Primary Key column(s)
+   - Provides a unique "lookup key" for the relation
+   - Cannot have any duplicate values
+   - Can be made up of > 1 column
+      - E.g. firstname, lastname
+
