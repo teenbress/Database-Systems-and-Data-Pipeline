@@ -30,4 +30,48 @@
    - Intersect
    - Except
 - Treat tuples within a relation as elements of a set
+   - Union All: sum(A+B)
+   - Intersect All: MIN(A,B)
+   - EXCEPT ALL: Difference(A-B)
+#### Nested Queries
+- IN
+-NOT IN
+
+#### Argmax query
+SELECT *
+FROM Sailors S
+WHERE S.rating >= ALL
+(SELECT S2.rating
+FROM Sailors S2);  // Maybe contain 3 rows, not only 1 record;
+**VS**
+SELECT *
+FROM Sailors S
+WHERE S.rating = 
+(SELECT MAX(S2.rating) 
+FROM Sailors S2);
+**VS**
+SELECT *
+FROM Sailors S
+ORDER BY rating DESC
+LIMIT 1;
+
+#### Subqueries in FROM : Like a "view on the fly"~
+SELECT bname, scount
+FROM Boars2 B,
+(SELECT B.bid, COUNT(* )
+        FROM Boats2 B, Reserves2 R
+        WHERE R.bid = B.bid AND B.color = 'red'
+        GROUP BY B.bid) AS **Reds(bid, scount)**
+WHERE Reds.bid=B.bid AND scount < 10
+#### WITH a.k.a common table expression(CTE)
+       WITH Reds(bid, scount) AS
+       (SELECT B.bid, COUNT(*)
+       FROM Boats2 B, Reserves2 R
+       WHERE R.bid = B.bid AND B.color = 'red'
+       GROUP BY B.bid)
+SELECT bname, scount
+FROM Boats2 B, Reds
+WHERE Reds.bid=B.bid
+AND scount < 10
+
 
