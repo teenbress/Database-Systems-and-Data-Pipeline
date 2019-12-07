@@ -38,17 +38,21 @@
 -NOT IN
 
 #### Argmax query
-SELECT *
-FROM Sailors S
-WHERE S.rating >= ALL
-(SELECT S2.rating
+```
+SELECT *  
+FROM Sailors S  
+WHERE S.rating >= ALL  
+(SELECT S2.rating  
 FROM Sailors S2);  // Maybe contain 3 rows, not only 1 record;
+```
 **VS**
-SELECT *
-FROM Sailors S
-WHERE S.rating = 
-(SELECT MAX(S2.rating) 
-FROM Sailors S2);
+```
+SELECT *  
+FROM Sailors S  
+WHERE S.rating =   
+(SELECT MAX(S2.rating)   
+FROM Sailors S2);  
+```
 **VS**
 SELECT *
 FROM Sailors S
