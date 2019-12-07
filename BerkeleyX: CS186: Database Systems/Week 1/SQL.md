@@ -5,8 +5,10 @@
 - General-purpose and feature-rich: extensible: callouts to other languages, data sources
 
 #### Relational Terminology
-- **Database**:Set of named Relations
-- **Relation**(Table):
+- **Database**: Set of named Relations
+- **Relation** (Table):
    - Schema: description ("metadata")
    - Instance: set of data satisfying the schema
+- **Attribute**(Column, Field)
+- **Tuple** (Record, Row)
 
