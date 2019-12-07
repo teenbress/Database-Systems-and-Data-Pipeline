@@ -54,12 +54,14 @@ WHERE S.rating =
 FROM Sailors S2);  
 ```
 **VS**
+```
 SELECT *
 FROM Sailors S
 ORDER BY rating DESC
 LIMIT 1;
-
+```
 #### Subqueries in FROM : Like a "view on the fly"~
+```
 SELECT bname, scount
 FROM Boars2 B,
 (SELECT B.bid, COUNT(* )
@@ -67,8 +69,10 @@ FROM Boars2 B,
         WHERE R.bid = B.bid AND B.color = 'red'
         GROUP BY B.bid) AS **Reds(bid, scount)**
 WHERE Reds.bid=B.bid AND scount < 10
+```
 #### WITH a.k.a common table expression(CTE)
-       WITH Reds(bid, scount) AS
+```
+WITH Reds(bid, scount) AS
        (SELECT B.bid, COUNT(*)
        FROM Boats2 B, Reserves2 R
        WHERE R.bid = B.bid AND B.color = 'red'
@@ -77,5 +81,6 @@ SELECT bname, scount
 FROM Boats2 B, Reds
 WHERE Reds.bid=B.bid
 AND scount < 10
+```
 
 
