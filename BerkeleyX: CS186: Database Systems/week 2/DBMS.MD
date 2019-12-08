@@ -22,4 +22,17 @@
    - **Block = Unit of transfer for disk read/write**  
    - **Page: a common synonym for "block"**
       - In some texts, "page" = a block-sized chunk of RAM
+- Disk Space Management, cont
+   - **Lowest layer of DBMS, manages space on disk**
+   - **Purpose:**
+      - Map pages to location on disk
+      - Load pages from disk to memory
+      - Save pages back to disk & ensuring writes
+   - Higher levels call upon this layer to:
+      - Read/write a page
+      - Allocate/de-allocate logical pages
+- Summary
+   - Provide API to read and write pages to devices
+   - Pages: block level organization of bytes on disk
+   - Provides "next" locality and abstracts FS/device details
    
