@@ -35,4 +35,7 @@
    - Provide API to read and write pages to devices
    - Pages: block level organization of bytes on disk
    - Provides "next" locality and abstracts FS/device details
+
+## Disk Representations: Files, Pages, Records
+
    
