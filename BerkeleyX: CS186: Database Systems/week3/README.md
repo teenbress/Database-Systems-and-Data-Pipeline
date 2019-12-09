@@ -55,5 +55,5 @@ Many Types of indexes exist: B+-Tree, Hash, R-Tree, GiST,...
    - B+ tree widely used because of its versatility
       - One of the most optimized components of a DBMS
       - Concurrence Updates
-      - In-memory efficiency
-A Visualization of a B+ Tree: https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html
+      - In-memory efficiency   
+A Visualization of a B+ Tree: [USFCA](https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html)
