@@ -37,6 +37,17 @@
    - Provides "next" locality and abstracts FS/device details
 
 ## Disk Representations: Files, Pages, Records(4.5)
+#### Record Formats
+##### Fixed-length records
+   - Each field in the record is a fixed length
+   - Storing fixed-length records on pages: **packed** vs. **unpacked**
+      - Packed: Pack records densely; compact upon delete to prevent fragmentation.
+      - Unpacked: Use a **bitmap** in the page header to distinguish empty and filled slots.
+#### Variable-length records. Slotted page.
+   - Slot directory in page header.
+      - For each record, store its length and a pointer to the begining of the record;
+      - Additionally, store(1) the number of records on the page and (2)a pointer to free space on the page.
+   - An optimization: insert records from the end of the page. This permits a variable-sized slot directory;i.e., the slot directory and records grow until the page is filled.
 ## File Organization(05)
 -Multiple File Organizations
    - Heap Files: Suitable when typical access is a full scan of all records
