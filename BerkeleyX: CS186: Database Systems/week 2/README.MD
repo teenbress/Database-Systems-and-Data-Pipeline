@@ -63,6 +63,8 @@
    - **B:** The number of data blocks = 5
    - **R:** Number of records per block = 2
    - **D:** (Average) time to read/write disk block = 5ms  
+   - **Heap files better: Frequent deletes, inserts, updates**
+   - **Sorted files better: Key look up, selecting rang by key**
 ![heap files](https://github.com/teenbress/Still_Hungry_Still_Foolish/blob/master/BerkeleyX:%20CS186:%20Database%20Systems/images/heap%20files.png)
 
 
