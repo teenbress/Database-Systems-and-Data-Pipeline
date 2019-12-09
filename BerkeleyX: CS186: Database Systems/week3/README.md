@@ -41,11 +41,12 @@ Many Types of indexes exist: B+-Tree, Hash, R-Tree, GiST,...
   - Leaves will be stored sequentially(and linked, of course)
   - Can control "fill factor" on pages
 ### **Summary**
+A Visualization of a B+ Tree: [USFCA](https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html)
 - ISAM is a static structure
    - **Only leaf pages modified**; overflow pages needed
    - Overflow **chains can degrade performance** unless size of data set and data distribution stay constant
 
--  **B+ Tree is a dynamic structure***
+-  **B+ Tree is a dynamic structure**
    - Inserts/deletes leave tree height-balanced; log_FN cost
    - High fanout(F) means depth rarely more than 3 or 4
    - Almost always better than maintaining a sorted file.
@@ -55,5 +56,6 @@ Many Types of indexes exist: B+-Tree, Hash, R-Tree, GiST,...
    - B+ tree widely used because of its versatility
       - One of the most optimized components of a DBMS
       - Concurrence Updates
-      - In-memory efficiency          
-A Visualization of a B+ Tree: [USFCA](https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html)
+      - In-memory efficiency 
+  
+
