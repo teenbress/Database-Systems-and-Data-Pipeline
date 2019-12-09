@@ -36,6 +36,22 @@
    - Pages: block level organization of bytes on disk
    - Provides "next" locality and abstracts FS/device details
 
-## Disk Representations: Files, Pages, Records
+## Disk Representations: Files, Pages, Records(4.5)
+## File Organization(05)
+-Multiple File Organizations
+   - Heap Files: Suitable when typical access is a full scan of all records
+   - Sorted Files: Best for retrieval in order, or when a range of records is needed
+   - Clustered Files & Indexes: Group data into clocks to enable fast lookup and efficient modifications
+- Cost Model and Analysis
+   - B: # of data blocks in the file
+   - R: # of records per block
+   - D: Avg time to read/write disk block
+   
+   - Foucs: Average case analysis for uniform random workloads
+- Heap Files & Sorted Files
+   - **B:** The number of data blocks = 5
+   - **R:** Number of records per block = 2
+   - **D:** (Average) time to read/write disk block = 5ms
+
 
    
