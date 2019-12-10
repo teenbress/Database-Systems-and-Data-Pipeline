@@ -91,8 +91,8 @@ Issues to consider in any index structure (not just B+ -trees)
 - Attractive big-O
 - Don't forget constant factors of random I/O
    - Hard to beat sequential I/O of scans unless very selectivs
-- Indexes beyond B+-trees for more complex searches
-![cost model] (https://github.com/teenbress/Still_Hungry_Still_Foolish/blob/master/BerkeleyX:%20CS186:%20Database%20Systems/images/class%20cost%20model.png)
+- Indexes beyond B+-trees for more complex searches   
+!<cost model> (https://github.com/teenbress/Still_Hungry_Still_Foolish/blob/master/BerkeleyX:%20CS186:%20Database%20Systems/images/class%20cost%20model.png)
 
 
 
