@@ -1,5 +1,6 @@
 # B+ Trees & Indices
 ### Tree Indexes
+---
 ### Index
 Index is datastructure that enables fast **lookup** and **modification** of data entries by **search key**
 - **lookup**: may support many different operations
