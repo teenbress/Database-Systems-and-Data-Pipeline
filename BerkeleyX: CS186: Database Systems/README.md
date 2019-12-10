@@ -2,7 +2,7 @@
 
 - #### WEEK 1: SQL (06/12/2019)
 - #### WEEK 2: DISKS, BUFFERS, FILES (08/12/2019)
-- #### WEEK 3: B+ TREES & INDICES
+- #### WEEK 3: B+ TREES & INDICES(09/12/2019)
 
 Previous years' resources: 
 https://drive.google.com/drive/folders/1SDe0hv4RurrNLtTUAV5l0sgkSG9L_LaY
