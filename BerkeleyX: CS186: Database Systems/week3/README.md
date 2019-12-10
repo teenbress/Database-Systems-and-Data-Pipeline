@@ -59,7 +59,7 @@ A Visualization of a B+ Tree: [USFCA](https://www.cs.usfca.edu/~galles/visualiza
       - Concurrence Updates
       - In-memory efficiency 
 ## Refinements on Indexes and B+ Trees
----
+
 **General characteristics of an index:**
 Issues to consider in any index structure (not just B+ -trees)
 - Query support: what class of queries does the index allow?
@@ -78,9 +78,15 @@ Issues to consider in any index structure (not just B+ -trees)
    - The query is a conjunction of m >= 0 equality clauses of the form:
    k_1 = <val_1> AND k_2 = <val_2> AND ... AND k_m = <val_m>
    and at most 1 additional range clause of the form: k_m+1 {<,>} <val>
-   
+
 ### Data Entry Storage
+- 3 Basuc alternatives for data entries in any index:
+   - By value
+   - By reference
+   - By List of references
+- Heap file could be clustered or unclustered
 ### Variable Length Keys
+-
 ### B+ Trees Cost Modeling
   
 
