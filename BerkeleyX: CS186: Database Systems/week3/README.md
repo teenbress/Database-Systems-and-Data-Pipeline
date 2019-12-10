@@ -74,7 +74,11 @@ Issues to consider in any index structure (not just B+ -trees)
 <key><op><constant>   
    - Equality selections or Range selections: B+-trees provide both, focus on 1-d range search             
 ### Composite of Search Keys     
-
+- **A Composite Key** on columns(k_1, k_2, ..., k_n) "matches" a query if:
+   - The query is a conjunction of m >= 0 equality clauses of the form:
+   k_1 = <val_1> AND k_2 = <val_2> AND ... AND k_m = <val_m>
+   and at most 1 additional range clause of the form: k_m+1 {<,>} <val>
+   
 ### Data Entry Storage
 ### Variable Length Keys
 ### B+ Trees Cost Modeling
