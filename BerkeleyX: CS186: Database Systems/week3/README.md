@@ -72,8 +72,8 @@ Issues to consider in any index structure (not just B+ -trees)
 - Cost Model for Index vs Heap vs Sorted File
 #### Query Support Overview   
 <key><op><constant>   
-   - Equality selections or Range selections: B+-trees provide both, focus on 1-d range search             
-#### Composite of Search Keys     
+- Equality selections or Range selections: B+-trees provide both, focus on 1-d range search
+- Composite of Search Keys     
 - **A Composite Key** on columns(k_1, k_2, ..., k_n) "matches" a query if:
    - The query is a conjunction of m >= 0 equality clauses of the form:
    k_1 = <val_1> AND k_2 = <val_2> AND ... AND k_m = <val_m>
@@ -81,12 +81,17 @@ Issues to consider in any index structure (not just B+ -trees)
 
 #### Data Entry Storage
 - 3 Basuc alternatives for data entries in any index:
-   - By value
-   - By reference
-   - By List of references
-- Heap file could be clustered or unclustered
+   - By value (tuples)
+   - By reference (recordIds)
+   - By List of references (list of recordIds)
+- Heap file could be clustered or unclustered(only Alt2&3)
 #### Variable Length Keys
--
+- Prefix or Suffix?
 #### B+ Trees Cost Modeling
-  
+- Attractive big-O
+- Don't forget constant factors of random I/O
+   - Hard to beat sequential I/O of scans unless very selectivs
+- Indexes beyond B+-trees for more complex searches
+
+
 
