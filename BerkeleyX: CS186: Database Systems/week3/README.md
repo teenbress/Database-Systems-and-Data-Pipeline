@@ -1,5 +1,5 @@
 # B+ Trees & Indices
-### Tree Indexes
+### B+ Tree Indexes
 ---
 ### Index
 Index is datastructure that enables fast **lookup** and **modification** of data entries by **search key**
@@ -58,5 +58,25 @@ A Visualization of a B+ Tree: [USFCA](https://www.cs.usfca.edu/~galles/visualiza
       - One of the most optimized components of a DBMS
       - Concurrence Updates
       - In-memory efficiency 
+## Refinements on Indexes and B+ Trees
+---
+**General characteristics of an index:**
+Issues to consider in any index structure (not just B+ -trees)
+- Query support: what class of queries does the index allow?
+- Choice of  Search Key
+   - Affects the queries for which we can use an index
+- Data Entry Storage
+   - Affects performance of the index
+- Variable-length key tricks
+   - Affects performance of the index
+- Cost Model for Index vs Heap vs Sorted File
+### Query Support Overview   
+<key><op><constant>   
+   - Equality selections or Range selections: B+-trees provide both, focus on 1-d range search             
+### Composite of Search Keys     
+
+### Data Entry Storage
+### Variable Length Keys
+### B+ Trees Cost Modeling
   
 
