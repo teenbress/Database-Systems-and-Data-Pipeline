@@ -70,23 +70,23 @@ Issues to consider in any index structure (not just B+ -trees)
 - Variable-length key tricks
    - Affects performance of the index
 - Cost Model for Index vs Heap vs Sorted File
-### Query Support Overview   
+#### Query Support Overview   
 <key><op><constant>   
    - Equality selections or Range selections: B+-trees provide both, focus on 1-d range search             
-### Composite of Search Keys     
+#### Composite of Search Keys     
 - **A Composite Key** on columns(k_1, k_2, ..., k_n) "matches" a query if:
    - The query is a conjunction of m >= 0 equality clauses of the form:
    k_1 = <val_1> AND k_2 = <val_2> AND ... AND k_m = <val_m>
    and at most 1 additional range clause of the form: k_m+1 {<,>} <val>
 
-### Data Entry Storage
+#### Data Entry Storage
 - 3 Basuc alternatives for data entries in any index:
    - By value
    - By reference
    - By List of references
 - Heap file could be clustered or unclustered
-### Variable Length Keys
+#### Variable Length Keys
 -
-### B+ Trees Cost Modeling
+#### B+ Trees Cost Modeling
   
 
