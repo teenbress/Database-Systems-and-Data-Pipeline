@@ -6,7 +6,8 @@
   eg: Let R be a table with 1000 pages and **5000** records. Let S be a table with 500 pages and **1000** records. 
      Schema Reserves: [R]=1000, |R|=5,000
      Schema Sailors: [S]=500, |S|=1,000
-1. Simple Nested Loop Join(**SNLJ**): for every sing record in R, Search all in S.  
+1. Simple Nested Loop Join(**SNLJ**):  
+   for every sing record in R, Search all in S.  
    I/O cost: [R] + |R|[S] = 1000 + (1,000*5,000)*500 = 2500,001,000
 2. Page Nested Loop Join(**PNLJ**):   
    with R as the outer relation:  
