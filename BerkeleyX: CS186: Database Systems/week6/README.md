@@ -35,9 +35,9 @@ The basic idea is to hash both relations on the join attribute using same hash f
    - Note: no constraint on size of S(probing relation)!
 ### 6. Sort-merge Join
   - I/Os
-    -sort R + sort S + ([R]+[S])
+    - sort R + sort S + ([R]+[S])
     - 3([R]+[S]) I/Os
   - Memory Requirements: [S] < B^2 (S is # of pages in larger relation) 
     
-Sort merge Join is less sensitive to data skew than hash join;   
-If the available number of buffers falls in ([R]^(1/2), [S]^(1/2)), hash join costs less than sort-merge join, as hash join need only to hold partitions of the smaller relation.
+- Sort merge Join is less sensitive to data skew than hash join;   
+- If the available number of buffers falls in ([R]^(1/2), [S]^(1/2)), hash join costs less than sort-merge join, as hash join need only to hold partitions of the smaller relation.
