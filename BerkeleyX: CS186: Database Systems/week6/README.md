@@ -27,7 +27,7 @@
    - Total cost of 2-pass hash join: 3([R]+[S]) I/Os
  - Memory Requirements
  Build hash table on R with uniform partitioning
-   - **Partitioning Phase devides R into (B-1) runs of size [R]/(B-1)  
-   - **Matching Phase requires each [R]/(B-1) < (B-2)  
-   - **R < (B-1)(B-2) < B^2  
+   - **Partitioning Phase devides R into (B-1) runs of size [R]/(B-1)**  
+   - **Matching Phase requires each [R]/(B-1) < (B-2)**  
+   - **R < (B-1)(B-2) < B^2**  
    - Note: no constraint on size of S(probing relation)!
