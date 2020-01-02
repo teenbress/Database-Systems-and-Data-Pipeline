@@ -20,7 +20,9 @@
    eg: Assume that on S we have  Alternative 2 B+ Tree of Height 3.
    I/O cost: [R] +=[R]* (P_R) * (4+1)    
    (Explanation: For every record in R, it takes 4 to traverse the B+ Tree and 1 to read the data)
-### 5. Hash Join
+### 5. Hash Join:   
+The basic idea is to hash both relations on the join attribute using same hash function. If we hash each relation into k partitions, we are assured that R tuples in partition i can join only with S tuples in the same partition i. Then we can read in a (complete) partition of the smaller relation R  and scan just the corresponding partition of S for matches. We never need to consider those R and S tuples again.
+**Grace Hash Join**
  - I/Os
    - Partition phase: read+write both relations: 2([R]+[S]) I/Os
    - Matching phase: read both trlations, forward output: ([R]+[S])I/Os
@@ -29,5 +31,13 @@
  Build hash table on R with uniform partitioning
    - **Partitioning Phase devides R into (B-1) runs of size [R]/(B-1)**  
    - **Matching Phase requires each [R]/(B-1) < (B-2)**  
-   - **R < (B-1)(B-2) < B^2**  
+   - **[R] < (B-1)(B-2) < B^2**  
    - Note: no constraint on size of S(probing relation)!
+### 6. Sort-merge Join
+  - I/Os
+    -sort R + sort S + ([R]+[S])
+    - 3([R]+[S]) I/Os
+  - Memory Requirements: [S] < B^2 (S is # of pages in larger relation) 
+    
+Sort merge Join is less sensitive to data skew than hash join;   
+If the available number of buffers falls in ([R]^(1/2), [S]^(1/2)), hash join costs less than sort-merge join, as hash join need only to hold partitions of the smaller relation.
