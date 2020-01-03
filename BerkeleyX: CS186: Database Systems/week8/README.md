@@ -26,7 +26,9 @@
   - Pass 2: local Grace Hash Join per node
 ### Parallel Sorting
 by partitioning using range
-#### Parallel Sort Merge Join
+   #### Parallel Sort Merge Join
+### Parallel Aggs/Group By
+"Broadcast" Join
 
    
    
