@@ -17,16 +17,16 @@
       - Bushy(Tree) parallelism
    - Intra-operator(within a single operator)
       - Partition Parallelism
-## Parallel Hashing
+### Parallel Hashing
 - Phase 1: partition data across machines using a hashing function h1;   
 - Phase 2: Each machine run the external hashing functions h2,...hk...independently;   
-  ### Parallel Grace Hashing
+  #### Parallel Grace Hashing
   - Pass1: parallel streaming
      - stream building and probing tables through shuffle/partition
   - Pass 2: local Grace Hash Join per node
-## Parallel Sorting
+### Parallel Sorting
 by partitioning using range
-### Parallel Sort Merge Join
+#### Parallel Sort Merge Join
 
    
    
