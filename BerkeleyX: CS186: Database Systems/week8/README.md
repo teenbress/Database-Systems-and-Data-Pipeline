@@ -17,6 +17,9 @@
       - Bushy(Tree) parallelism
    - Intra-operator(within a single operator)
       - Partition Parallelism
+## Parallel individual operations
+### Bulk Loading and Scanning
+
 ### Parallel Hashing
 - Phase 1: partition data across machines using a hashing function h1;   
 - Phase 2: Each machine run the external hashing functions h2,...hk...independently;   
