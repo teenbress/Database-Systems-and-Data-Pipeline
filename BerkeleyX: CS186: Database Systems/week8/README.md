@@ -28,7 +28,7 @@
 by partitioning using range
    #### Parallel Sort Merge Join
 ### Parallel Aggs/Group By
-"Broadcast" Join
+#### "Broadcast" Join
 
    
    
