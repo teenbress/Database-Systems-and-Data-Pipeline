@@ -23,12 +23,12 @@ aborted) before another user’s actions are executed. We will do this by using 
 - **Isolation:**  Execution of each Xact is isolated from that of others
 - **Durability:**   If a Xach commits, its effects persist.
 ## Concurrency Control
-### Serial Schedual
-### Conflict Dependency Graph
-### Lock-based Concurrency Control
+### Serializability
+### Two-Phase Locking(2PL)
    #### Stricted two-phase Locking(Strict 2PL)
-   - **interleaved excution != serial excution**
-   #### **Deadlocks**
+   - **releasing locks: ** 2PL allows for releasing locks gradually, while strict 2PL means all locks are released simultaneously at the end of the transaction   
+   - **cascading aborts:** 2PL cannot prevent this, while Strict 2PL prevents this.
+### **Deadlocks**
    - Deadlocks Avoidance
       works because:
       - the same priority scheme applies on all lock conflicts
@@ -38,7 +38,7 @@ aborted) before another user’s actions are executed. We will do this by using 
       Wound-Wait: if T1 > T2, T2 aborts; else T1 waits;(higher priority access most quickly)
       Wait-Die: if T1 > T2, T1 waits, else T1 aborts (higher priority not so quick access)
    - Deadlock Detection: check for cycles in a graph
-   #### Lock Graduarity
+### Multi-Graduarity Locking
    
    
    
