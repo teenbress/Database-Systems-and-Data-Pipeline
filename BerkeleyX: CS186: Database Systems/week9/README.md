@@ -24,8 +24,7 @@ aborted) before another user’s actions are executed. We will do this by using 
 - **Durability:**   If a Xach commits, its effects persist.
 ## Concurrency Control
 ### Serializability
-### Two-Phase Locking(2PL)
-   #### Stricted two-phase Locking(Strict 2PL)
+### Two-Phase Locking(2PL) & Stricted two-phase Locking(Strict 2PL)
    - **releasing locks: ** 2PL allows for releasing locks gradually, while strict 2PL means all locks are released simultaneously at the end of the transaction   
    - **cascading aborts:** 2PL cannot prevent this, while Strict 2PL prevents this.
 ### **Deadlocks**
