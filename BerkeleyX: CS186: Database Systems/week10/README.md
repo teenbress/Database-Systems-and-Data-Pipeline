@@ -12,7 +12,10 @@
    - consistency, normalization
 - **Physical Design** - indexes, disk layout
 - **Security Design** - who accesses what, and how
-### ER Model Basics(Cont.)
+## Conceptual Design: ER Model Basics(Cont.)
+- Entity: A real world object that described by a set of attributes
+- Relationship: Association among two or more entities
+   - Relationship can have their owen attributes
 - Key Constraints: 1-to-many, many-to-many, many-to-1, 1-to-1
 - Participation Constraints
 - Weak Entities: A **weak entity** can be identified uniquely only by considering the primary key of another(owner) entity.
@@ -27,5 +30,14 @@
 - Design choices:
    - Entity or attribute?
    - Entity or relationship?
-   - Relationships: **Binary or ternary? Aggregation?**  
+   - Relationships: **Binary or ternary? Aggregation?** 
+### Logical Design:Convert ER to relational
+In translating a **many-to- many** relationship set to a relation, attributes of the relation must include:
+1) Keys for each participating entity set (as foreign keys). This set of attributes forms a **superkey** for the relation.
+2) All descriptive attributes.
+## DB Design: Fuctional Dependencies and Normalization
+
+
+
+   
  
