@@ -17,15 +17,15 @@
 - Participation Constraints
 - Weak Entities: A **weak entity** can be identified uniquely only by considering the primary key of another(owner) entity.
    - 1-to-many: one owner, many weak entities
-   - have total participation in this identifying relationship set.
+   - have total participation in this identifying relationship set   
  O: 0 or many   
  |: 1 or more   
  |O: 1 or 0   
  ||: exactly 1   
- <-: many   
+ <-: many    
+ ![ER Model](https://github.com/teenbress/Still_Hungry_Still_Foolish/blob/master/BerkeleyX:%20CS186:%20Database%20Systems/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200106170516.png)
 - Design choices:
    - Entity or attribute?
    - Entity or relationship?
-   - Relationships: **Binary or ternary? Aggregation?**   
- ![ER Model](https://github.com/teenbress/Still_Hungry_Still_Foolish/blob/master/BerkeleyX:%20CS186:%20Database%20Systems/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200106170516.png)
+   - Relationships: **Binary or ternary? Aggregation?**  
  
