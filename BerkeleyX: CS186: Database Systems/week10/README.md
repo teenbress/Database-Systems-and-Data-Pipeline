@@ -26,7 +26,7 @@
 - Design choices:
    - Entity or attribute?
    - Entity or relationship?
-   - Relationships: **Binary or ternary? Aggregation?**
- ![ER model graph]  
+   - Relationships: **Binary or ternary? Aggregation?**   
+ ![ER model graph]
  (https://github.com/teenbress/Still_Hungry_Still_Foolish/blob/master/BerkeleyX:%20CS186:%20Database%20Systems/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200106170516.png)
  
