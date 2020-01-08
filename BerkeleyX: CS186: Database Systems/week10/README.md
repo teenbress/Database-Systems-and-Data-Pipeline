@@ -16,8 +16,9 @@
 - Entity: A real world object that described by a set of attributes
 - Relationship: Association among two or more entities
    - Relationship can have their owen attributes
-- Key Constraints: 1-to-many, many-to-many, many-to-1, 1-to-1
-- Participation Constraints
+- Relationship Constraints: 1-to-many, many-to-many, many-to-1, 1-to-1
+   - Key Constraints: 1-to-many(->)
+   - Participation Constraints: **at least one** relationship
 - Weak Entities: A **weak entity** can be identified uniquely only by considering the primary key of another(owner) entity.
    - 1-to-many: one owner, many weak entities
    - have total participation in this identifying relationship set   
@@ -36,8 +37,9 @@ In translating a **many-to- many** relationship set to a relation, attributes of
 1) Keys for each participating entity set (as foreign keys). This set of attributes forms a **superkey** for the relation.
 2) All descriptive attributes.
 ## DB Design: Fuctional Dependencies and Normalization
-
-
-
-   
+A functional dependency X −→ Y means that the X column determines Y column in a table R.
+A **superkey** is a set of columns that determine all the columns in the table.   
+A **candidate** key is a minimal set of of columns that determine all the columns in the table.   
+For example, if columns K, L determine all the columns in the table and K is also a primary key of the table (aka column K alone determins all the columns in the table) then K, L is superkey and K is a superkey and a candidate key.   
+ ###    Decomposing a Relation
  
