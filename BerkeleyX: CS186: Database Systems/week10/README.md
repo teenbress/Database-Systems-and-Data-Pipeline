@@ -42,4 +42,9 @@ A **superkey** is a set of columns that determine all the columns in the table.
 A **candidate** key is a **minimal** set of of columns that determine all the columns in the table.   
 For example, if columns K, L determine all the columns in the table and K is also a primary key of the table (aka column K alone determins all the columns in the table) then K, L is superkey and K is a superkey and a candidate key.   
  ###    Decomposing a Relation
+ #### Boyce-Codd Normal Form (BCNF)
+ - Relationship R with FDs F is in BCNF if , for all X -> A in F+:
+    - A ⊆ X, (called a trivial FD), or
+    - X is a superkey for R 
+ -  In other words: “R is in BCNF if the only non-trivial FDs over R are key constraints.”
  
