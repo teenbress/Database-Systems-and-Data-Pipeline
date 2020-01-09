@@ -5,7 +5,7 @@
 - UNION ALL include **duplicate** records but UNION will omit duplicate records
 - UNION ALL typically better than UNION- UNION requires the server to do the additional work of removing any duplicates
 #### UNION ALL -> UNION
-1. WHERE a!= X   
+   `WHERE a!= X`   
    
 ### 2.FOREIGN & FRIMARY KEY
     - PRIMARY KEY: unique, not NULL
