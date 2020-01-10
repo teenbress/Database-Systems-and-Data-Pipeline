@@ -1,9 +1,9 @@
 # [41 SQL Essential Questions Notes](https://www.toptal.com/sql/interview-questions#form)
 
 ### 1.UION & difference between UNION ALL
-- UNION merges the contents of two structure-compatibility tables into a single combined table.
-- UNION ALL include **duplicate** records but UNION will omit duplicate records
-- UNION ALL typically better than UNION- UNION requires the server to do the additional work of removing any duplicates
+    - UNION merges the contents of two structure-compatibility tables into a single combined table.
+    - UNION ALL include **duplicate** records but UNION will omit duplicate records
+    - UNION ALL typically better than UNION- UNION requires the server to do the additional work of removing any duplicates
 #### UNION ALL -> UNION      
     - WHERE a!= X   
       
